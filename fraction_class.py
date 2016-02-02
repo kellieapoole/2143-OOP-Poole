@@ -1,21 +1,11 @@
-"""
+'''
 Kellie Poole
 CMPS 2143 - OOP
 Homework 1: Overload Add Method
-"""
+'''
 
-def gcd(a,b):
-    """
-    @function: gcd
-    @description: Find the GCD of the numerator and denominator
-    @param: int a - numerator
-    @param: int b - denominator
-    @returns: GCD
-    """ 
-    if b == 0:
-        return a
-    else:
-        return gcd(b, a % b)
+from fractions import gcd
+'''Using code to find GCD from the standard library'''
 
 class fraction(object):
     def __init__(self,n=None,d=None):
